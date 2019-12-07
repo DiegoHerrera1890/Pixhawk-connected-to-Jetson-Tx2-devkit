@@ -160,7 +160,12 @@ after do this go to the Serial Tab and change:
 
 ![alt text](https://github.com/DiegoHerrera1890/Pixhawk-connected-to-Jetson-Tx2-devkit/blob/master/serial_conf.PNG "serie conf")
 
+After this is done reboot the vehicle and disconnect the USB cable from the Windows PC.
 
+##Running MAVROS in the TX2 with the Pixhawk
 
+In the TX2 run: `jetson@desktop:~$ roscore`
+In other terminal run:
+`roslaunch mavros px4.launch fcu_url:="/dev/ttyTHS2:921600" gcs_url:="udp://:UDP_port@127.0.0.1:14550"`
 
 
