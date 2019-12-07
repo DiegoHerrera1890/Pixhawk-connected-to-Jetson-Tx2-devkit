@@ -156,7 +156,7 @@ if these parameters does not appears change these:
 
 after do this go to the Serial Tab and change:
 
-`SER_TEL2_BAUD = auto`
+`SER_TEL2_BAUD = 921600`
 
 ![alt text](https://github.com/DiegoHerrera1890/Pixhawk-connected-to-Jetson-Tx2-devkit/blob/master/serial_conf.PNG "serie conf")
 
