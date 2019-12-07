@@ -53,25 +53,31 @@ jetson@desktop:~$ cd ~/catkin_ws
 jetson@desktop:~$ catkin init
 jetson@desktop:~$ wstool init src`
 
-Install MAVLink:
-we use the Kinetic reference for all ROS distros as it's not distro-specific and up to date
+Install MAVLink
+we use the Kinetic reference for all ROS distros as it's not distro-specific and up to date:
+
 `jetson@desktop:~$ rosinstall_generator --rosdistro kinetic mavlink | tee /tmp/mavros.rosinstall`
 
-Install MAVROS: get source (upstream - released)
+Install MAVROS: get source (upstream - released):
+
 `jetson@desktop:~$ rosinstall_generator --upstream mavros | tee -a /tmp/mavros.rosinstall`
 
-Create workspace & deps
+Create workspace & deps:
+
 `jetson@desktop:~$ wstool merge -t src /tmp/mavros.rosinstall
 jetson@desktop:~$ wstool update -t src -j4
 jetson@desktop:~$ rosdep install --from-paths src --ignore-src -y`
 
 Install GeographicLib datasets:
+
 `jetson@desktop:~$ sudo ./src/mavros/mavros/scripts/install_geographiclib_datasets.sh`
 
-Build source
+Build source:
+
 `jetson@desktop:~$ catkin build`
 
 Make sure that you use setup.bash or setup.zsh from workspace.
 Else rosrun can't find nodes from this workspace.
+
 `jetson@desktop:~$ source devel/setup.bash `
  [I'm a reference-style link][Arbitrary case-insensitive reference text] 
