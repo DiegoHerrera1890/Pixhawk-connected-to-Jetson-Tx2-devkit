@@ -47,6 +47,7 @@ After installing ROS-melodic we need to create our catkin workspace and install 
 `jetson@desktop:~$ sudo apt-get install python-catkin-tools python-rosinstall-generator -y`
 
 Create the workspace: unneeded if you already has workspace:
+
 `jetson@desktop:~$ mkdir -p ~/catkin_ws/src
 jetson@desktop:~$ cd ~/catkin_ws
 jetson@desktop:~$ catkin init
