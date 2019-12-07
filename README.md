@@ -106,20 +106,6 @@ before star the software settings we need to connect the Pixhawk to the JTX2 via
 ![alt text](https://github.com/DiegoHerrera1890/Pixhawk-connected-to-Jetson-Tx2-devkit/blob/master/pixhawk_LI.jpg "telem 2")
 ![alt text](https://github.com/DiegoHerrera1890/Pixhawk-connected-to-Jetson-Tx2-devkit/blob/master/telem2.PNG "telem 2 pin details")
 
-PIN  Jetson TX2 =================> PiXhawk 4   PIN
-
-  1  GND =================>   GND         6  
-  
-  2  RTS    Not connect
-  
-  3  NC     Not connect   
-  
-  4  RX ==================>   Tx          2
-  
-  5  TX ==================>   Rx          3
-  
-  6  CTS    Not connect
-
 
 | PIN | Jetson TX2 | PIN | Pixhawk |
 | --- |:----------:| --- |:-------:|
