@@ -88,15 +88,10 @@ Else rosrun can't find nodes from this workspace.
  In this part, I will explain how to setup the JTX2 devkit to connect with the PiXHawk 4 (PX4)
  First, we need to locate the UART 1 in the TX2 devkit
  
- Here's our logo (hover to see the title text):
+ Here's our UART 1:
 
-Inline-style: 
 ![alt text](https://github.com/DiegoHerrera1890/Pixhawk-connected-to-Jetson-Tx2-devkit/blob/master/uart_tx2.jpg "Logo Title Text 1")
 
-Reference-style: 
-![alt text][logo]
-
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
  
  
  
