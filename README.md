@@ -107,7 +107,7 @@ before star the software settings we need to connect the Pixhawk to the JTX2 via
 ![alt text](https://github.com/DiegoHerrera1890/Pixhawk-connected-to-Jetson-Tx2-devkit/blob/master/telem2.PNG "telem 2 pin details")
 
 
-| PIN | Jetson TX2 | PIN | Pixhawk |
+| PIN | Jetson TX2 | PIN | Telem 2 |
 | --- |:----------:| --- |:-------:|
 | 1   | GND        |  6  |   GND   |
 | 2   | RTS        |   Not connect |
@@ -123,6 +123,9 @@ Please refer to this video to setup the pixhawk with basic settings:
 
 https://www.youtube.com/watch?v=6Dk7oSKf4wE&t=482s
 
+after setting the Pixhawk we have to modify some parameters.
+To do that open QGroundControl and go to parameters:
+![alt text](https://github.com/DiegoHerrera1890/Pixhawk-connected-to-Jetson-Tx2-devkit/blob/master/pixhawk_LI.jpg "telem 2")
 
 
 
