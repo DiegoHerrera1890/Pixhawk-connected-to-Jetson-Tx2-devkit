@@ -2,7 +2,7 @@
 
 In this post, I'm running MAVROS in the TX2 connected to the Pixhawk 4 with PX4 and QGroundControl. First of all, we need to install ROS Melodic from [the ROS official website](http://wiki.ros.org/melodic/Installation/Ubuntu "ROS-Melodic for Ubuntu 18.04") 
 
-## Installation:
+## ROS-Installation:
 
 ### 1. Configure your Ubuntu repositories
 Configure your Ubuntu repositories to allow "restricted," "universe," and "multiverse." You can follow the Ubuntu guide for instructions on doing this.
@@ -40,3 +40,8 @@ Up to now you have installed what you need to run the core ROS packages. To crea
 To install this tool and other dependencies for building ROS packages, run:
 
 `sudo apt install python-rosinstall python-rosinstall-generator python-wstool build-essential`
+
+## MAVROS-Installation:
+After installing ROS-melodic we need to create our catkin workspace and install MAVROS and then build everything.
+In the home directory we create our workspace:
+`jetson@desktop:~$ mkdir ~/catkin_ws/src`
