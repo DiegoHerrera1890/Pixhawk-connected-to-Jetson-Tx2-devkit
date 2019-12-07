@@ -2,7 +2,7 @@
 
 In this post, I'm running MAVROS in the TX2 connected to the Pixhawk 4 with PX4 and QGroundControl. First of all, we need to install ROS Melodic from the [ROS official website](http://wiki.ros.org/melodic/Installation/Ubuntu "ROS-Melodic for Ubuntu 18.04") 
 
-## 1 ROS-Installation:
+## 1. ROS-Installation:
 
 ##### 1.1 Configure your Ubuntu repositories
 Configure your Ubuntu repositories to allow "restricted," "universe," and "multiverse." You can follow the Ubuntu guide for instructions on doing this.
@@ -41,7 +41,7 @@ To install this tool and other dependencies for building ROS packages, run:
 
 `sudo apt install python-rosinstall python-rosinstall-generator python-wstool build-essential`
 
-## 2 MAVROS-Installation:
+## 2. MAVROS-Installation:
 After installing ROS-melodic we need to create our catkin workspace and install MAVROS and then build everything.
 
 `jetson@desktop:~$ sudo apt-get install python-catkin-tools python-rosinstall-generator -y`
@@ -84,8 +84,19 @@ Else rosrun can't find nodes from this workspace.
  take it from [Mavros github offcial](https://github.com/mavlink/mavros/blob/master/mavros/README.md) 
  
  
- ## JETSON TX2 Configuration
+ ## 3. JETSON TX2 Configuration
+ In this part, I will explain how to setup the JTX2 devkit to connect with the PiXHawk 4 (PX4)
+ First, we need to locate the UART 1 in the TX2 devkit
  
+ Here's our logo (hover to see the title text):
+
+Inline-style: 
+![alt text](C:\Users\Diego\Pictures/uart_tx2.jpg "Logo Title Text 1")
+
+Reference-style: 
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
  
  
  
