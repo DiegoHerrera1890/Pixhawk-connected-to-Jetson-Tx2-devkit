@@ -97,6 +97,8 @@ Else rosrun can't find nodes from this workspace.
  ![alt text](https://github.com/DiegoHerrera1890/Pixhawk-connected-to-Jetson-Tx2-devkit/blob/master/uart%201.PNG "Pin 1 is GND")
  
  If you're running the last Jetpack(4.2.3) you don't need to change the serial device port from /dev/ttyACM to /dev/ttyTHS2, it is already done in the last jetpack. Perhaps we need to give a permission to the port /dev/ttyTHS2 and add the user to the group running these commands:
- `sudo stop modemmanager
- sudo usermod -a -G dialout $USER`
  
+ `sudo stop modemmanager`
+ `sudo usermod -a -G dialout $USER`
+ 
+Now we are ready to go to the Pixhawk settings.
