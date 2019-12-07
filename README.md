@@ -79,5 +79,5 @@ Build source:
 Make sure that you use setup.bash or setup.zsh from workspace.
 Else rosrun can't find nodes from this workspace.
 
-`jetson@desktop:~$ source devel/setup.bash `
+`jetson@desktop:~$ source devel/setup.bash ` \n
  [I'm a reference-style link][Arbitrary case-insensitive reference text] 
