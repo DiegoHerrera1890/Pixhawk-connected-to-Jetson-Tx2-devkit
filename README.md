@@ -91,7 +91,7 @@ Else rosrun can't find nodes from this workspace.
  Here's our logo (hover to see the title text):
 
 Inline-style: 
-![alt text](C:\Users\Diego\Pictures/uart_tx2.jpg "Logo Title Text 1")
+![alt text](https://github.com/DiegoHerrera1890/Pixhawk-connected-to-Jetson-Tx2-devkit/blob/master/uart_tx2.jpg "Logo Title Text 1")
 
 Reference-style: 
 ![alt text][logo]
