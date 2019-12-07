@@ -100,5 +100,11 @@ Else rosrun can't find nodes from this workspace.
  
  `sudo stop modemmanager`
  `sudo usermod -a -G dialout $USER`
- 
+
+## 4. PiXhawk Configuration
+before star the software settings we need to connect the Pixhawk to the JTX2 via telem2
+![alt text](https://github.com/DiegoHerrera1890/Pixhawk-connected-to-Jetson-Tx2-devkit/blob/master/pixhawk_LI.jpg "telem 2")
+![alt text](https://github.com/DiegoHerrera1890/Pixhawk-connected-to-Jetson-Tx2-devkit/blob/master/telem2.PNG "telem 2 pin details")
+
 Now we are ready to go to the Pixhawk settings.
+
