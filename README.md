@@ -125,7 +125,31 @@ https://www.youtube.com/watch?v=6Dk7oSKf4wE&t=482s
 
 after setting the Pixhawk we have to modify some parameters.
 To do that open QGroundControl and go to parameters:
-![alt text](https://github.com/DiegoHerrera1890/Pixhawk-connected-to-Jetson-Tx2-devkit/blob/master/pixhawk_LI.jpg "telem 2")
+![alt text](https://github.com/DiegoHerrera1890/Pixhawk-connected-to-Jetson-Tx2-devkit/blob/master/parameters.PNG "parameters")
+
+Now look for the tab "Mavlink" and change these parameters:
+MAV_1_CONFIG = TELEM 2
+MAV_2_CONFIG = TELEM 2
+![alt text](https://github.com/DiegoHerrera1890/Pixhawk-connected-to-Jetson-Tx2-devkit/blob/master/mavlink.PNG "parameters")
+
+reboot the vehicle and go again to the mavlink tab and change these parameters:
+![alt text](https://github.com/DiegoHerrera1890/Pixhawk-connected-to-Jetson-Tx2-devkit/blob/master/mavlink_conf.PNG "parameters")
+
+MAV_1_MODE = Onboard
+MAV_1_RATE= 921600 baud
+MAV_1_FORWARD = True
+
+if these parameters does not appears change these:
+
+MAV_2_MODE = Onboard
+MAV_2_RATE= 921600 baud
+MAV_2_FORWARD = True
+
+after do this go to the Serial Tab and change:
+
+SER_TEL2_BAUD = auto
+
+![alt text](https://github.com/DiegoHerrera1890/Pixhawk-connected-to-Jetson-Tx2-devkit/blob/master/serial_conf.PNG "serie conf")
 
 
 
