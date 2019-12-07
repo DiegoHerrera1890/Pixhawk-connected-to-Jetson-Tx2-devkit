@@ -46,38 +46,25 @@ After installing ROS-melodic we need to create our catkin workspace and install 
 
 `jetson@desktop:~$ sudo apt-get install python-catkin-tools python-rosinstall-generator -y`
 
-Create the workspace: unneeded if you already has workspace:
-
+Create the workspace: unneeded if you already has workspace:\n
 `jetson@desktop:~$ mkdir -p ~/catkin_ws/src
 jetson@desktop:~$ cd ~/catkin_ws
 jetson@desktop:~$ catkin init
-jetson@desktop:~$ wstool init src`
-
-Install MAVLink
-we use the Kinetic reference for all ROS distros as it's not distro-specific and up to date:
-
-`jetson@desktop:~$ rosinstall_generator --rosdistro kinetic mavlink | tee /tmp/mavros.rosinstall`
-
-Install MAVROS: get source (upstream - released):
-
-`jetson@desktop:~$ rosinstall_generator --upstream mavros | tee -a /tmp/mavros.rosinstall`
-
-Create workspace & deps:
-
+jetson@desktop:~$ wstool init src`\n
+Install MAVLink\n
+we use the Kinetic reference for all ROS distros as it's not distro-specific and up to date:\n
+`jetson@desktop:~$ rosinstall_generator --rosdistro kinetic mavlink | tee /tmp/mavros.rosinstall`\n
+Install MAVROS: get source (upstream - released):\n
+`jetson@desktop:~$ rosinstall_generator --upstream mavros | tee -a /tmp/mavros.rosinstall`\n
+Create workspace & deps:\n
 `jetson@desktop:~$ wstool merge -t src /tmp/mavros.rosinstall
 jetson@desktop:~$ wstool update -t src -j4
-jetson@desktop:~$ rosdep install --from-paths src --ignore-src -y`
-
-Install GeographicLib datasets:
-
-`jetson@desktop:~$ sudo ./src/mavros/mavros/scripts/install_geographiclib_datasets.sh`
-
-Build source:
-
-`jetson@desktop:~$ catkin build`
-
+jetson@desktop:~$ rosdep install --from-paths src --ignore-src -y`\n
+Install GeographicLib datasets:\n
+`jetson@desktop:~$ sudo ./src/mavros/mavros/scripts/install_geographiclib_datasets.sh`\n
+Build source:\n
+`jetson@desktop:~$ catkin build`\n
 Make sure that you use setup.bash or setup.zsh from workspace.
-Else rosrun can't find nodes from this workspace.
-
+Else rosrun can't find nodes from this workspace.\n
 `jetson@desktop:~$ source devel/setup.bash ` \n
  [I'm a reference-style link][Arbitrary case-insensitive reference text] 
