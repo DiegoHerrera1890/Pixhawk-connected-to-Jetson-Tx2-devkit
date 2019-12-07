@@ -92,7 +92,9 @@ Else rosrun can't find nodes from this workspace.
 
 ![alt text](https://github.com/DiegoHerrera1890/Pixhawk-connected-to-Jetson-Tx2-devkit/blob/master/uart_tx2.jpg "Logo Title Text 1")
 
+ and here we have the serial port header connections:
  
+ ![alt text](https://github.com/DiegoHerrera1890/Pixhawk-connected-to-Jetson-Tx2-devkit/blob/master/uart%201.PNG)
  
  
  
