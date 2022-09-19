@@ -134,11 +134,7 @@ Now look for the tab "Mavlink" and change these parameters:
 
 `MAV_2_CONFIG = TELEM 2`
 
-![alt text](https://github.com/DiegoHerrera1890/Pixhawk-connected-to-Jetson-Tx2-devkit/blob/master/mavlink.PNG "parameters")
-
 reboot the vehicle and go again to the mavlink tab and change these parameters:
-
-![alt text](https://github.com/DiegoHerrera1890/Pixhawk-connected-to-Jetson-Tx2-devkit/blob/master/mavlink_conf.PNG "parameters")
 
 `MAV_1_MODE = Onboard` 
 
@@ -154,7 +150,10 @@ if these parameters does not appears change these:
 
 `MAV_2_FORWARD = True`
 
-after do this go to the Serial Tab and change:
+If everything is fine then you are going to see something like this:
+![alt text](https://github.com/DiegoHerrera1890/Pixhawk-connected-to-Jetson-Tx2-devkit/blob/master/mavlink_conf.PNG "parameters")
+
+after this go to the Serial Tab and change:
 
 `SER_TEL2_BAUD = 921600`
 
